@@ -1,0 +1,51 @@
+ @import "../../../../node_modules/stylus-px2rem"
+  html-font-size = 375/12px
+@import '../../../assets/stylus/mixins.styl'
+    .brand_provide
+      width 100%
+      // height 476px
+      background-color #ffffff
+      margin-bottom 15px
+      >header
+        height 110px
+        font-size 35px
+        display flex
+        align-items center
+        color #333
+        justify-content center
+        img 
+          width 30px
+          height 30px
+          margin-left 10px
+      .brand_content
+        height 476px
+        padding-bottom 8px
+        ul
+          overflow hidden
+          margin 0 20px
+          li
+            float left
+            position relative
+            width 340px
+            height 236px
+            font-size 28px
+            background-color #f4f4f4
+            margin-bottom 8px
+            .brand_text
+              position absolute
+              padding 20px 0 0 20px
+              color #333333
+              .price
+                margin 10px 0
+              .new
+                width 64px
+                height 32px
+                background-image url('http://yanxuan-static.nosdn.127.net/hxm/yanxuan-wap/p/20161201/style/img/icon-normal/new-5e42f2db1f.png')
+                background-size 100%
+            &:nth-of-type(1)
+              margin-right 8px
+            &:nth-of-type(3)
+              margin-right 8px
+            img 
+              width 100%
+              height 100%

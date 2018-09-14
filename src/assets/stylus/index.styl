@@ -1,0 +1,1482 @@
+@import './index.styl'
+body,html 
+  background-color #f4f4f4
+  height 100%
+  width 100%
+  overflow hidden
+// html
+  font-size 50px
+  // home页
+  .home
+    position relative
+    .header_header_con  //home页头部容器
+      width 100%
+      background-color #ffffff
+      margin-bottom (8/$rem)
+      position fixed
+      top 0
+      left 0
+      z-index 99
+      .home_header
+        padding (16/$rem 30/$rem)
+        font-size 0
+        display flex
+        img 
+          height (40/$rem)
+          vertical-align middle
+          padding-top (16/$rem)
+          margin-right (50/$rem)
+      .home_nav        //home也顶部横向可滚动导航
+        width 100%
+        overflow hidden
+        background-color #ffffff
+        .home_nav_list
+          padding 0 (30/$rem)
+          height (50/$rem)
+          width 15rem
+          li
+            float left
+            height (60/$rem)
+            margin-left (40/$rem)
+            font-size (28/$rem)
+            padding 0 (17/$rem)
+            line-height (60/$rem)
+            color #333
+            &.active
+              border-bottom (4/$rem) solid #b4282d
+              color #b4282d
+          li:first-of-type
+            margin-left 0
+    .home_main    //home页主体部分
+      margin-top (160/$rem)
+      margin-bottom (98/$rem)
+      overflow hidden
+      .show_container   //home主页主轮播图
+        background-color #ffffff
+        margin-bottom (15/$rem)
+        .swiper-container
+          width 100%
+          height 100%
+          .swiper-wrapper
+            width 100%
+            height 100%
+            .swiper-slide
+              display flex
+              justify-content center
+              align-items flex-start
+              flex-wrap wrap
+              img 
+                width 100%
+          .swiper-pagination
+            .swiper-pagination-bullet
+              display inline-block
+              width 0.4rem
+              height 0.04rem
+              border-radius 0
+              background #fff
+              opacity 0.4
+            .swiper-pagination-bullet-active
+              background #fff
+              opacity 1
+        .show_tips
+          width 100%
+          height 0.72rem
+          padding 0 0.4rem
+          box-sizing border-box
+          display flex
+          >li
+            float left 
+            flex 1
+            height 0.36rem
+            margin 0.18rem 0
+            display flex
+            line-height 0.36rem
+            .tip_icon
+              width 0.32rem
+              background-size 100%
+              background-repeat no-repeat
+              vertical-align middle
+              margin-top 0.05rem
+            .tip_text
+              font-size 0.24rem
+              height 0.32rem
+              width 100%
+              margin-left 0.1rem
+      .brand_provide   //主页品牌制造商提供部分
+        width 100%
+        background-color #ffffff
+        margin-bottom (15/$rem)
+        >header
+          height 1.1rem
+          font-size 0.35rem
+          display flex
+          align-items center
+          color #333
+          justify-content center
+          img 
+            width 0.3rem
+            height 0.3rem
+            margin-left 0.1rem
+        .brand_content
+          ul
+            overflow hidden
+            margin 0 0.2rem
+            li
+              float left
+              position relative
+              width (350/$rem)
+              height (236/$rem)
+              font-size (28/$rem)
+              background-color #f4f4f4
+              margin-bottom (8/$rem)
+              .brand_text
+                position absolute
+                padding (20/$rem 0 0 20/$rem)
+                color #333333
+                .price
+                  margin (10/$rem 0)
+                .new
+                  width (64/$rem)
+                  height (32/$rem)
+                  background-image url('http://yanxuan-static.nosdn.127.net/hxm/yanxuan-wap/p/20161201/style/img/icon-normal/new-5e42f2db1f.png')
+                  background-size 100%
+              &:nth-of-type(1)
+                margin-right (8/$rem)
+              &:nth-of-type(3)
+                margin-right (8/$rem)  
+              img 
+                width 100%
+                height 100%
+      .new_goods   //主页新品首发部分
+        width 100%
+        background-color #ffffff
+        margin-bottom (15/$rem)
+        .new_header
+          width 100%
+          height (260/$rem)
+          display flex
+          flex-direction column
+          background-image url('http://yanxuan-static.nosdn.127.net/hxm/yanxuan-wap/p/20161201/style/img/icon-normal/bitmap-d4f7b37e32.png')
+          background-size 100%
+          color #8BA0B6
+          align-items center
+          justify-content center
+          margin-bottom (32/$rem)
+          >div:first-of-type
+            font-size (40/$rem)
+          .lookAll
+            width (240/$rem)
+            height (56/$rem)
+            font-size (30/$rem)
+            margin-top (20/$rem)
+            text-align center
+            background-color #D8E5F1
+            line-height (56/$rem)
+            span 
+              display inline-block
+              width (10/$rem)
+              height (22/$rem)
+              background-image url('http://yanxuan-static.nosdn.127.net/hxm/yanxuan-wap/p/20161201/style/img/icon-normal/indexNewArrow-f3b56d449b.png')
+              background-size 100%
+        .new_goods_container
+          width 100%
+          height (480/$rem)
+          overflow hidden
+          >ul
+            overflow hidden
+            >li
+              float left
+              width (280/$rem)
+              margin-left (30/$rem)
+              display flex
+              flex-direction column
+              position relative
+              .new_goods_img
+                width (280/$rem)
+                height (280/$rem)
+                background-color #f4f4f4
+                >img 
+                  width (280/$rem)
+                  height (280/$rem)
+              div
+                width (280/$rem)
+                padding (0 10/$rem)
+                box-sizing border-box
+                span 
+                  display inline-block
+                  width (280/$rem)
+                  overflow hidden
+                  white-space nowrap
+                  text-overflow ellipsis
+              .new_goods_name
+                height (33/$rem)
+                margin (10/$rem 0)
+                font-size (28/$rem)
+                color #333333
+              .new_goods_info
+                height (30/$rem)
+                font-size (26/$rem)
+                color #7f7f7f
+                margin-bottom (20/$rem)
+              .new_goods_price
+                height (27/$rem)
+                font-size (28/$rem)
+                color #b4282d
+              .new_goods_tags
+                height (40/$rem)
+                margin-top (10/$rem)
+                font-size (24/$rem)
+                color #fff
+                box-sizing border-box
+                line-height (30/$rem)
+                display flex
+                >p
+                  width (110/$rem)
+                  height (40/$rem)
+                  padding (5/$rem 16/$rem )
+                  background-color #f48f18
+                  vertical-align middle
+                  box-sizing border-box
+                  border-radius (3/$rem) 
+                  transform scale(.8)
+                  text-align center
+            .more_new_goods
+              width (280/$rem)
+              height (280/$rem)
+              border (8/$rem) solid #F4F4F4
+              line-height (280/$rem)
+              text-align center 
+              font-size (30/$rem)
+              color #666
+              box-sizing border-box
+            .productPlace
+              width (40/$rem)
+              border (1/$rem) solid #b4a078
+              position absolute
+              font-size (24/$rem)
+              margin (10/$rem 0 0 10/$rem)
+              padding (12/$rem 8/$rem)
+              color #b4a078
+              transform scale(.8)
+              box-sizing border-box
+              text-align center
+      .recommend   //主页人气推荐部分
+        width 100%
+        background-color #ffffff
+        margin-bottom (15/$rem)
+        .recommend_header
+          width 100%
+          height (260/$rem)
+          display flex
+          flex-direction column
+          background-image url('http://yanxuan-static.nosdn.127.net/hxm/yanxuan-wap/p/20161201/style/img/icon-normal/bitmap2-d626e0b52a.png')
+          background-size 100%
+          color #B4A078
+          align-items center
+          justify-content center
+          margin-bottom (32/$rem)
+          >div:first-of-type
+            font-size (40/$rem)
+          .lookAll
+            width (240/$rem)
+            height (56/$rem)
+            font-size (30/$rem)
+            margin-top (20/$rem)
+            text-align center
+            background-color #F4E9CB
+            line-height (56/$rem)
+            span 
+              display inline-block
+              width (10/$rem)
+              height (22/$rem)
+              background-image url('http://yanxuan-static.nosdn.127.net/hxm/yanxuan-wap/p/20161201/style/img/icon-normal/indexPopularArrow-fb701819de.png')
+              background-size 100%
+        .recommend_container
+          width 100%
+          height (480/$rem)
+          overflow hidden
+          >ul
+            overflow hidden
+            >li
+              float left
+              width (280/$rem)
+              margin-left (30/$rem)
+              display flex
+              flex-direction column
+              .recommend_img
+                width (280/$rem)
+                height (280/$rem)
+                background-color #f4f4f4
+                >img 
+                  width (280/$rem)
+                  height (280/$rem)
+              div
+                width (280/$rem)
+                padding (0 10/$rem)
+                box-sizing border-box
+                span 
+                  display inline-block
+                  width (280/$rem)
+                  overflow hidden
+                  white-space nowrap
+                  text-overflow ellipsis
+              .recommend_name
+                height (33/$rem)
+                margin (10/$rem 0)
+                font-size (28/$rem)
+                color #333333
+              .recommend_info
+                height (30/$rem)
+                font-size (26/$rem)
+                color #7f7f7f
+                margin-bottom (20/$rem)
+              .recommend_price
+                height (27/$rem)
+                font-size (28/$rem)
+                color #b4282d
+              .recommend_tags
+                height (40/$rem)
+                margin-top (10/$rem)
+                font-size (24/$rem)
+                color #fff
+                box-sizing border-box
+                line-height (30/$rem)
+                display flex
+                >p
+                  width (110/$rem)
+                  height (40/$rem)
+                  padding (5/$rem 16/$rem )
+                  background-color #f48f18
+                  vertical-align middle
+                  box-sizing border-box
+                  border-radius (3/$rem) 
+                  transform scale(.8)
+                  text-align center
+            .more_recommends
+              width (280/$rem)
+              height (280/$rem)
+              border (8/$rem) solid #F4F4F4
+              line-height (280/$rem)
+              text-align center 
+              font-size (30/$rem)
+              color #666
+              box-sizing border-box
+      .countDown   //主页严选限时购部分
+        height (380/$rem)
+        margin-bottom (20/$rem)
+        padding (30/$rem 40/$rem 30/$rem 56/$rem)
+        background-color #ffffff
+        display flex
+        .countDown_time
+          width (334/$rem)
+          height (320/$rem)
+          padding-top (80/$rem)
+          .countDown_title
+            height (36/$rem)
+            font-size (36/$rem)
+            color #333
+            letter-spacing (16/$rem) 
+            margin-bottom (24/$rem)
+          .countDown_time_change
+            height (56/$rem)
+            display flex
+            .hours,.minutes,.second
+              display inline-block
+              width (62/$rem)
+              height (56/$rem)
+              background-color #444
+              color #fff
+              font-size (30/$rem)
+              border-radius (5/$rem) 
+              text-align center
+              line-height  (56/$rem)
+            .colon
+              font-size (30/$rem)
+              display inline-block
+              color #333
+              text-align center
+              font-weight bold
+              width (20/$rem)
+              line-height  (56/$rem)
+              margin 0 (4/$rem)
+          .next_countdown
+            height (24/$rem)
+            margin-top (40/$rem)
+            font-size (24/$rem)
+            color #333
+        .countDown_info
+          width (320/$rem)
+          height (320/$rem)
+          background-image url('http://yanxuan.nosdn.127.net/5a07b6a1c9d8d5e039e8360d0f92c396.png?imageView&quality=85&thumbnail=330x330')
+          background-size 100%
+          position relative
+          .countDown_price
+            width (96/$rem)
+            height (96/$rem)
+            border-radius 50%
+            background rgba(244,143,24,.95) 
+            display flex
+            flex-direction column
+            text-align center 
+            justify-content center
+            color #fff
+            font-size (27/$rem)
+            position absolute
+            right (20/$rem)
+            bottom (30/$rem)
+            .oldPrice
+              &::before
+                content ''
+                width 55%
+                height (1/$rem)
+                background-color #fff
+                position absolute
+                top (60/$rem)
+      .welfare    //福利社部分
+        width 100%
+        height (300/$rem)
+        margin-bottom (20/$rem)
+        background-image url('http://yanxuan.nosdn.127.net/a3ea2d1108c94c7dece05eddf95f6df5.jpg')
+        background-size 100%
+      .choiceness   //主页专题精选部分
+        width 100%
+        height (563/$rem)
+        margin-bottom (20/$rem)
+        background-color #fff
+        .choiceness_title
+          height (110/$rem)
+          display flex
+          text-align center
+          justify-content center
+          line-height (110/$rem)
+          font-size (30/$rem)
+          color #333
+          .title_icon
+            width (30/$rem)
+            height (30/$rem)
+            background-image url('http://yanxuan-static.nosdn.127.net/hxm/yanxuan-wap/p/20161201/style/img/icon-normal/go2-3e511991d6.png')
+            background-size 100%
+            margin-top (38/$rem)
+            margin-left (10/$rem)
+        .choiceness_slide
+          padding (0 30/$rem 36/$rem)
+          overflow hidden
+          .swiper-container
+            .swiper-wrapper
+              width (575/$rem)
+              margin-left 0
+              .swiper-slide
+              .inner_item
+                width (575/$rem) !important
+                height (417/$rem)
+                margin-right (21/$rem)
+                img
+                  width 100%
+                  height (322/$rem)
+                  border-radius (8/$rem)
+                  margin-bottom (16/$rem)
+                .swiper_item_title
+                  font-size (28/$rem)
+                  height (40/$rem)
+                  display flex
+                  color #333
+                  .title_text
+                    width (405/$rem)
+                    white-space nowrap
+                    overflow hidden
+                    text-overflow ellipsis
+                  .item_title_price
+                    margin-left (40/$rem)
+                    color #b4282d
+                    float right 
+                    display flex
+                .swiper_item_info
+                  white-space: nowrap;
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+                  font-size: (24/$rem);
+                  color: #7F7F7F;
+      .home_nav_item   //主页导航对应各分类内容列表
+        width 100%
+        background-color #fff
+        margin-bottom (20/$rem)
+        .nav_item_title
+          height (120/$rem)
+          text-align center
+          line-height (120/$rem)
+          color #333
+          font-size (30/$rem)
+        .item_list
+          overflow hidden
+          >li
+            float left
+            width 50%
+            height (587/$rem)
+            box-sizing border-box
+            padding (0 10/$rem 33/$rem 20/$rem)
+            &:nth-of-type(2n)
+              padding (0 20/$rem 33/$rem 10/$rem)
+            .item_img
+              width (345/$rem)
+              height (414/$rem)
+              font-size 0
+              >img
+                width (345/$rem)
+                background #f4f4f4
+              .item_info
+                width 100%
+                height (69/$rem)
+                background-color #F1ECE2
+                font-size (24/$rem)
+                color #9F8A60
+                line-height (69/$rem)
+                padding-left (10/$rem)
+                box-sizing border-box
+                overflow hidden
+                white-space nowrap
+                text-overflow ellipsis
+            .item_tips
+              width (335/$rem)
+              height (30/$rem)
+              margin (20/$rem 0 0 4/$rem)
+              padding-left (10/$rem)
+              >p
+                width (48/$rem)
+                height (20/$rem)
+                padding (5/$rem 16/$rem)
+                background-color #f48f18
+                color #ffffff
+                font-size: (24/$rem);
+                border-radius (3/$rem) 
+                vertical-align middle
+            .item_name
+              height (48/$rem)
+              margin-top (10/$rem)
+              padding (0 10/$rem)
+              font-size (26/$rem)
+              color #333
+              overflow hidden
+              white-space nowrap
+              text-overflow ellipsis
+              line-height (48/$rem)
+            .item_price
+              height (32/$rem)
+              padding (0 10/$rem)
+              font-size (30/$rem)
+              color #b4282d
+          .more
+            height (414/$rem)
+            display flex
+            align-items center
+            justify-content center
+            flex-direction column
+            background-color #f4f4f4
+            .more_text
+              font-size (32/$rem)
+              color #333
+              margin-bottom (60/$rem)
+            .more_icon
+              width (67/$rem)
+              height (67/$rem)
+              background-image url('http://yanxuan-static.nosdn.127.net/hxm/yanxuan-wap/p/20161201/style/img/icon-normal/goodGridMore-233aaf669a.png')
+              background-size 100%
+      .home_footer
+        width 100%
+        height (245/$rem)
+        background-color #414141
+        .footer_container
+          padding (54/$rem 20/$rem 28/$rem)
+          .footer_button
+            height (62/$rem)
+            display flex
+            align-items center
+            text-align center
+            span
+              width (172/$rem)
+              height (60/$rem)
+              font-size (26/$rem)
+              color #ffffff
+              border (1/$rem) solid #999
+              display inline-block
+              line-height (60/$rem)
+              vertical-align middle
+              border-radius (4/$rem) 
+              &:first-of-type
+                margin (0 50/$rem 0 150/$rem)
+          .company_info
+            height (64/$rem)
+            margin-top (36/$rem)
+            font-size (24/$rem)
+            color #999
+            text-align center
+            line-height (32/$rem)
+    .gotoTop
+      position fixed
+      width (82/$rem)
+      height (82/$rem)
+      right (23/$rem)
+      bottom (120/$rem)
+      z-index 5000
+      background-image url('http://yanxuan-static.nosdn.127.net/hxm/yanxuan-wap/p/20161201/style/img/icon-normal/goToTop-7a19216f77.png')
+      background-size 100% 
+    .newWapUserGiftModal
+      position fixed
+      top 0
+      bottom 0
+      left 0
+      right 0
+      z-index 999
+      .mask
+        position absolute
+        top 0
+        left 0
+        width 100%
+        height 100%
+        background rgba(0,0,0,.5)
+        .close_btn
+          width (64/$rem)
+          height (64/$rem)
+          position fixed
+          top (60/$rem)
+          right (30/$rem)
+          background-image url('../../../static/img/close.png')
+          background-size 100%
+          opacity .6
+        .new_enjoy
+          position absolute
+          top 50%
+          left 50%
+          transform translate(-50%,-50%)
+          width (630/$rem)
+          height (692/$rem)
+          .enjoy_content
+            width 100%
+            height 100%
+            box-sizing border-box
+            padding (30/$rem 24/$rem)
+            border-radius (20/$rem)
+            background #ffffff
+            .title
+              width 100%
+              height (59/$rem)
+              text-align center
+              line-height (59/$rem)
+              font-size (40/$rem)
+              font-weight bold
+              color #333 
+              span 
+                font-weight bold
+            .subTitle
+              width 100%
+              height (36/$rem)
+              margin-top (4/$rem)
+              font-size (24/$rem)
+              text-align center
+              line-height (36/$rem)
+            .newUserItem
+              width 100%
+              height (232/$rem)
+              margin-top (50/$rem)
+              background #f4f4f4
+              border-radius (5/$rem)
+              display flex
+              .item_img
+                width (232/$rem)
+                height (232/$rem)
+                img 
+                  width 100%
+                  height 100%
+              .content
+                width (342/$rem)
+                height (146/$rem)
+                padding (43/$rem 0)
+                margin-left (8/$rem)
+                .item_title
+                  width (280/$rem)
+                  height (41/$rem)
+                  font-size (26/$rem)
+                  overflow hidden
+                  white-space nowrap
+                  text-overflow ellipsis
+                  line-height (41/$rem)
+                .item_brand
+                  width 100%
+                  height (36/$rem)
+                  margin-top (15/$rem)
+                  display flex
+                  span 
+                    height (34/$rem)
+                    padding (0 8/$rem)
+                    border (1/$rem) solid #7f7f7f
+                    border-radius (5/$rem)
+                    font-size (24/$rem)
+                    width auto
+                    line-height (34/$rem)
+                .item_price
+                  width 100%
+                  height (41/$rem)
+                  margin-top (20/$rem)
+                  font-size (26/$rem)
+                  display flex
+                  .newPrice
+                    color #b4282d
+                  .oldPrice
+                    color #999
+                    position relative
+                    text-decoration line-through
+                    margin-left (8/$rem)
+            .actCouponBtn
+              width 100%
+              height (88/$rem)
+              margin-top (40/$rem)
+              background #b4282d
+              color #ffffff
+              text-align center
+              line-height (88/$rem)
+              font-size (26/$rem)
+              border-radius (5/$rem)
+            .linkBtn
+              width (580/$rem)
+              height (86/$rem)
+              border (1/$rem) solid #7F7F7F
+              margin-top (24/$rem)
+              color #333
+              text-align center
+              line-height (86/$rem)
+              border-radius (5/$rem)
+              font-size (26/$rem)
+
+  //识物页
+  .shiwu_container 
+    .header   //识物页头部
+      bottom-border-1px(#e4e4e4)
+      width 100%
+      height (87/$rem)
+      background-color #fafafa
+      position fixed
+      top 0
+      left 0
+      z-index 99
+      display flex
+      align-items center
+      justify-content space-between
+      .header_con
+        padding (0 16/$rem 0 24/$rem)
+        position relative
+        display flex
+        align-items center
+        // justify-content space-between
+        width (710/$rem)
+        height 100%
+        span
+          background-image url('./img/header.png')
+        .header_home
+          width (48/$rem)
+          height (44/$rem)
+          background-position (0 -62/$rem)
+          background-size 325%
+        .header_logo
+          width (172/$rem)
+          height (54/$rem)
+          position absolute
+          top 0
+          left 0
+          right 0
+          bottom 0
+          margin auto
+          background-position (0 -120/$rem)
+          background-size 100%
+        .header_search
+          width (48/$rem)
+          height (44/$rem)
+          margin-left (510/$rem)
+          background-size 330%
+          background-position (-6/$rem -290/$rem)
+        .header_cart
+          width (48/$rem)
+          height (44/$rem)
+          margin-left (40/$rem)
+          background-size 330%
+          background-position (-6/$rem -6/$rem)
+    .scroll_container   //识物页主页整体竖向滑屏
+      margin-top (87/$rem)
+      height (1100/$rem)
+      .scroll_wrapper
+        margin-bottom (40/$rem)
+        .banner_wrapper     //识物页主轮播图
+          width 100%
+          height (433/$rem) 
+          background-color #ffffff
+          display flex
+          box-sizing content-box
+          .banner
+            width (690/$rem)
+            height 100%
+            margin (0 30/$rem)
+            padding (24/$rem 0)
+            display flex
+            box-sizing content-box
+            .swiper-container
+              width 100%
+              height 100%
+              overflow visible 
+              .swiper-slide
+                padding (0 10/$rem)
+                box-sizing border-box
+                position relative
+                height (385/$rem)
+                img
+                  width (670/$rem)
+                  border-radius (10/$rem) 
+                .swiper_content
+                  width (466/$rem)
+                  height (198/$rem)
+                  position absolute
+                  top 0
+                  bottom 0
+                  left 0
+                  right 0
+                  margin auto
+                  background-color rgba(255,255,255,.9)
+                  display flex
+                  flex-direction column
+                  align-items center
+                  justify-content center
+                  .swiper_subtitle
+                    font-size (24/$rem)
+                    color #7f7f7f
+                    line-height (30/$rem)
+                    transform scale(.8)
+                  .swiper_title
+                    color #333333
+                    font-size (32/$rem)
+                    margin-top (16/$rem)
+                    font-weight bold
+                    line-height (48/$rem)
+                  .swiper_desc
+                    color #333333
+                    font-size (24/$rem)
+                    margin-top (4/$rem)
+                    line-height (36/$rem)
+        .shiwu_channels   //识物页主轮播图下方滚动列表
+          width 100%
+          height (286/$rem)
+          padding (32/$rem 30/$rem 28/$rem)
+          margin-bottom (20/$rem)
+          background-color #ffffff
+          box-sizing border-box
+          .swiper-container
+            width 100%
+            height (226/$rem)
+            font-size 0
+            .swiper-wrapper
+              font-size 0
+              .swiper-slide
+                width (164/$rem)
+                height (210/$rem)
+                margin-right (24/$rem)
+                display flex
+                flex-direction column
+                // justify-content center
+                position relative
+                font-size 0
+                img
+                  width 100%
+                  height (164/$rem)
+                  margin-bottom (22/$rem)
+                  border-radius (5/$rem)
+                .topNum
+                  position absolute
+                  top 0
+                  right 0
+                  color #ffffff
+                  width (116/$rem)
+                  height (32/$rem)
+                  font-size (24/$rem)
+                  border-radius (5/$rem)
+                  background-image url('http://yanxuan-static.nosdn.127.net/hxm/yanxuan-wap/p/20161201/style/img/icon-normal/rbGradient-049c62dfb5.png')
+                  background-size 100%
+                  line-height (32/$rem)
+                  padding-right (5/$rem)
+                .channel_title
+                  color #333333
+                  font-size (24/$rem)
+                  width 190/$rem
+                  height (24/$rem)
+                  line-height 1
+                  text-align center
+        .recommends    //识物页严选推荐部分以及严选臻品部分
+          width (690/$rem)
+          padding (0 30/$rem 10/$rem)
+          background-color #ffffff
+          margin-bottom (20/$rem)
+          .rcmd_container
+            width 100%
+            >header
+              width 100%
+              height (120/$rem)
+              text-align center 
+              line-height (120/$rem)
+              font-size (32/$rem)
+            .mainPosItem
+              width 100%
+              height (572/$rem)
+              margin-bottom (30/$rem)
+              border (1/$rem) solid #d9d9d9
+              border-radius (8/$rem)
+              color #333333
+              .img_container
+                width 100%
+                height (386/$rem)
+                border-radius (8/$rem 8/$rem 0 0)
+                background-size 100%
+                position relative
+                .topic_tag
+                  width (130/$rem)
+                  height (36/$rem)
+                  position absolute
+                  top (20/$rem)
+                  left (20/$rem)
+                  box-sizing border-box
+                  padding (0 16/$rem)
+                  border (1/$rem) solid #d9d9d9
+                  background-color rgba(255,255,255,.9)
+                  font-size (24/$rem)
+                  line-height (36/$rem)
+                  text-align center
+                  border-radius (36/$rem)
+              .topicInfo
+                width (648/$rem)
+                height (95/$rem)
+                padding (24/$rem 20/$rem 67/$rem)
+                .info_title
+                  height (43/$rem)
+                  margin-bottom (19/$rem)
+                  display flex
+                  justify-content space-between
+                  align-items center
+                  font-size (34/$rem)
+                  >.title
+                    display inline-block
+                    width (300/$rem)
+                    margin-right (30/$rem)
+                    overflow hidden
+                    white-space nowrap
+                    text-overflow ellipsis
+                .info_desc
+                  height (33/$rem)
+                  color #7f7f7f
+                  font-size (24/$rem)
+                  overflow hidden
+                  white-space nowrap
+                  text-overflow ellipsis
+            .minorPosItem
+              width (688/$rem)
+              height (272/$rem)
+              border (1/$rem) solid #d9d9d9
+              border-radius (8/$rem)
+              margin-bottom (30/$rem)
+              color #333333
+              display flex
+              >.topicInfo
+                width (358/$rem)
+                padding (0 30/$rem 0 20/$rem)
+                display flex
+                flex-direction column
+                justify-content center
+                align-items center
+                .author_container
+                  width 100%
+                  height (48/$rem)
+                  margin-bottom (25/$rem)
+                  display flex
+                  .avatar
+                    width (46/$rem)
+                    height (46/$rem)
+                    margin-right (4/$rem)
+                    background-size 100%
+                    vertical-align middle
+                    border-radius:50%
+                  .nickName
+                    width (160/$rem)
+                    height (46/$rem)
+                    font-size (24/$rem)
+                    color #333333
+                    line-height (46/$rem)
+                >.title
+                  width 100% 
+                  height (38/$rem)
+                  margin-bottom (14/$rem) 
+                  overflow hidden
+                  white-space nowrap
+                  text-overflow ellipsis
+                  font-size (32/$rem)
+                >.subTitle
+                  width 100% 
+                  height (67/$rem) 
+                  color #7f7f7f
+                  font-size (24/$rem)
+                  line-height 1.5
+                  overflow hidden
+                  white-space nowrap
+                  text-overflow ellipsis
+              .minorPic
+                width (280/$rem)
+                height (272/$rem)
+                border-radius (8/$rem)
+                background-size 100%
+                position relative
+                .topic_tag
+                  height (36/$rem)
+                  position absolute
+                  top (20/$rem)
+                  left (20/$rem)
+                  box-sizing border-box
+                  padding (0 16/$rem)
+                  border (1/$rem) solid #d9d9d9
+                  background-color rgba(255,255,255,.9)
+                  font-size (24/$rem)
+                  line-height (36/$rem)
+                  text-align center
+                  border-radius (36/$rem)
+        .tenFifteen
+          width (690/$rem)
+          height (531/$rem)
+          margin-bottom (20/$rem)
+          padding (0 30/$rem 40/$rem 30/$rem)
+          background #ffffff
+          >header
+            width 100%
+            height (120/$rem)
+            text-align center 
+            line-height (120/$rem)
+            font-size (32/$rem) 
+          .tenFifteen_swiper
+            .swiper-container
+              .swiper-wrapper
+                .swiper-slide
+                  width (500/$rem)
+                  height (294/$rem)
+                  padding (38/$rem 40/$rem 79/$rem)
+                  margin-right (30/$rem)
+                  background-image url('http://yanxuan-static.nosdn.127.net/hxm/yanxuan-wap/p/20161201/style/img/icon-normal/tenFifteen-2a1d0ea11b.png')
+                  background-size 100%
+                  position relative
+                  &:last-child
+                    width (560/$rem)
+                    height (364/$rem)
+                    border (10/$rem) solid #e6e6e6
+                    padding 0
+                    margin 0
+                    .look_more
+                      width (192/$rem)
+                      height (38/$rem)
+                      position absolute
+                      top 0
+                      bottom 0
+                      left 0
+                      right 0
+                      margin auto
+                      font-size (26/$rem)
+                      color #7f7f7f
+                      span
+                        width (30/$rem)
+                        height  (30/$rem)
+                        background-image url('http://yanxuan-static.nosdn.127.net/hxm/yanxuan-wap/p/20161201/style/img/icon-normal/circle-right-arrow-3d59025cb6.png')
+                        display inline-block
+                        background-size 100%
+                  .tf_subtitle
+                    font-size (24/$rem)
+                    color #7f7f7f
+                    line-height (30/$rem)
+                    transform scale(.8)
+                    text-align center
+                    margin-bottom (40/$rem)
+                  .tf_title
+                    color #333333
+                    font-size (32/$rem)
+                    font-weight bold
+                    line-height (48/$rem)
+                    text-align center
+                    margin-bottom (14/$rem)
+                  .tf_desc
+                    color #333333
+                    font-size (24/$rem)
+                    margin-top (4/$rem)
+                    line-height (36/$rem) 
+                    text-align center
+                  .joinInfo
+                    height (48/$rem)
+                    width (500/$rem)
+                    text-align center 
+                    position absolute
+                    bottom (79/$rem)
+                    .inner
+                      overflow hidden
+                      height (48/$rem)
+                      width (360/$rem)
+                      display flex
+                      margin-left (80/$rem)
+                      .avatars
+                        width (176/$rem)
+                        margin-right (16/$rem)
+                        height (48/$rem)
+                        overflow hidden
+                        .avatar
+                          width (46/$rem)
+                          height (46/$rem)
+                          border-radius 50%
+                          margin-left (-5/$rem)
+                          float left 
+                          &:first-of-type
+                            margin-left 0
+                          >img 
+                            width 100% 
+                            display block
+                            border-radius 50%
+                          &:last-child
+                            background #d9d9d9
+                            display flex
+                            align-items center
+                            justify-content center
+                            span 
+                              width (6/$rem)
+                              height (6/$rem)
+                              background #ffffff
+                              margin-right (4/$rem) 
+                      .join
+                        font-size (24/$rem)
+                        color #7f7f7f
+                        float left
+                        height (48/$rem)
+                        line-height (48/$rem)
+        .look
+          width 100%
+          background #ffffff
+          header 
+            width 100%
+            height (120/$rem)
+            text-align center 
+            line-height (120/$rem)
+            font-size (32/$rem)
+          .look_content
+            width 100%
+            .img_wrapper
+              width 100%
+              height (750/$rem) 
+              >img 
+                width (750/$rem)
+                height (750/$rem) 
+            .topicInfo
+              width (690/$rem)
+              height (204/$rem)
+              padding (24/$rem 30/$rem 46/$rem)
+              .author
+                width 100%
+                height (48/$rem)
+                margin-bottom (24/$rem)
+                display flex
+                color #333
+                font-size (24/$rem)
+                line-height (48/$rem)
+                img 
+                  width (46/$rem)
+                  height (46/$rem)
+                  border (1/$rem) solid #d9d9d9
+                  border-radius 50%
+                  margin-right (8/$rem)
+                  vertical-align middle
+                  .nickname
+                    height (48/$rem)
+              .look_desc
+                color #7f7f7f
+                font-size (28/$rem)
+                line-height 1.6
+        .shiwu_More   //识物页查看更多
+          width (690/$rem)
+          margin (0 30/$rem)
+          header 
+            width 100%
+            height (140/$rem)
+            font-size (26/$rem)
+            line-height (120/$rem)
+            text-align center
+            color #333
+            display flex
+            align-items center
+            &::before,&::after
+              content ""
+              height (1/$rem)
+              width (264/$rem)
+              background #d9d9d9
+              display block
+            div
+              margin (0 24/$rem)
+          .more_content
+            width 100%
+            .content_item
+              width 100%
+              height (498/$rem)
+              box-sizing border-box
+              margin-bottom (30/$rem)
+              background #fff
+              color #333
+              padding (24/$rem)
+              img 
+                width 100%
+                height (360/$rem)
+              .content_title
+                width 100%
+                padding (28/$rem 0)
+                font-size (26/$rem)
+                overflow hidden
+                white-space nowrap
+                text-overflow ellipsis    
+  //分类页
+  .categorys
+      position relative
+      .cate_search
+        bottom-border-1px(#e4e4e4)
+        height (88/$rem)
+        padding (15/$rem 30/$rem)
+        background-color #ffffff
+        box-sizing border-box
+        position fixed
+        top 0
+        left 0
+        z-index 99
+        width 100%
+        .search
+          width 100%
+          height (56/$rem)
+          border-radius (8/$rem)
+          background-color #ededed
+          text-align center
+          display flex
+          align-items center
+          justify-content center
+          .search_icon
+            width (28/$rem)
+            height (28/$rem)
+            background-image url('../../../static/img/search_icon.png')
+            background-size 100%
+            background-repeat no-repeat
+          .search_text
+            height (56/$rem)
+            color #666
+            font-size (28/$rem)
+            line-height (56/$rem) 
+      .cate_container
+        margin (90/$rem 0 100/$rem 0)
+        .menu_container
+          position fixed
+          left 0
+          top (88/$rem)
+          width (162/$rem)
+          height (1280/$rem)
+          overflow hidden
+          background-color #ffffff
+          .menu_wrapper
+            padding-top (40/$rem)
+            padding-bottom (138/$rem)
+            li
+              height (50/$rem)
+              font-size (28/$rem)
+              color #333333
+              text-align center
+              position relative
+              line-height (50/$rem)
+              margin-top (40/$rem)
+              &:first-of-type
+                margin-top 0
+              &.active
+                color #ab2b2b
+                font-size (28/$rem)
+                &::before
+                  content: ' ';
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  bottom: 0;
+                  width: .08rem;
+                  background-color: #ab2b2b;   
+        .menu_detail
+          width (527/$rem)
+          height (1200/$rem)
+          margin-left (162/$rem)
+          padding (30/$rem)
+          background-color #ffffff
+          border-left (1/$rem) solid #e4e4e4
+          .menu_img
+            width 100%
+            height (192/$rem)
+            margin-bottom (32/$rem)
+            background-size 100%
+          .menu_list
+            overflow hidden
+            li 
+              width (144/$rem)
+              height (216/$rem)
+              margin-right (34/$rem)
+              float left 
+              display flex
+              flex-direction column
+              &:nth-of-type(3n)
+                margin-right 0
+              img 
+                width (144/$rem)  
+              .name
+                font-size (24/$rem)
+                color #333333
+                text-align center   
+  //购物车页
+  .shopCart
+    .shopCart_header
+      width 100%
+      height (88/$rem)
+      background-color #ffffff
+      line-height (88/$rem)
+      display flex
+      >.title
+        font-size (36/$rem)
+        margin-left (300/$rem)
+        color #333333
+      >.coupon
+        font-size (30/$rem)
+        float right
+        margin-left (220/$rem)
+        color #B4282D
+    .service
+      .service_list
+        padding (0 30/$rem)
+        overflow hidden
+        height (70/$rem)
+        display flex
+        justify-content space-between
+        align-items center  
+        li
+          height (36/$rem)
+          display flex
+          flex 1
+          align-items center
+          &:last-of-type
+            justify-content flex-end
+          &:nth-of-type(2)
+            justify-content center
+          .circle
+            width (10/$rem)
+            height (10/$rem)
+            background-image url('http://yanxuan-static.nosdn.127.net/hxm/yanxuan-wap/p/20161201/style/img/icon-normal/servicePolicy-1d7541974f.png')
+            background-size 100%
+            vertical-align middle
+            justify-content center
+          .service_title
+            font-size (24/$rem)
+            color #666666
+            margin-left (10/$rem)
+    .shopCart_main
+      display flex
+      flex-direction column
+      margin-top (400/$rem)
+      display flex
+      justify-content center
+      align-items center
+      .shopCart_img
+        width (248/$rem)
+        height (248/$rem)
+        background-image url('http://yanxuan-static.nosdn.127.net/hxm/yanxuan-wap/p/20161201/style/img/icon-normal/noCart-a8fe3f12e5.png')
+        background-size 100%
+      .shopCart_add
+        font-size (28/$rem)
+        color #999999
+        margin-bottom (50/$rem)
+      .shopCart_login
+        font-size (30/$rem)
+        width (480/$rem)
+        height (92/$rem)
+        background-color #b4282d
+        text-align center
+        line-height (92/$rem)
+        color #ffffff
+  //个人中心页
+  .profile
+    .profile_login
+      width 100%
+      height (700/$rem)
+      .logo
+        padding (160/$rem 0)
+        height (90/$rem)
+        text-align center
+        img
+          height 100%
+      .btn_wrap
+        width (670/$rem)
+        height (290/$rem)
+        padding (0 40/$rem)
+        margin-bottom (205/$rem)
+        .btn
+          width (666/$rem)
+          height (90/$rem)
+          margin-bottom (32/$rem)
+          border: (1/$rem) solid #b4282d;
+          font-size (28/$rem)
+          border-radius (4/$rem)
+          vertical-align middle
+          text-align center
+          line-height (90/$rem)
+          >span:first-of-type
+            display inline-block
+            width (40/$rem)
+            height (40/$rem)
+            margin-right (16/$rem)
+            background-image url('./img/profile.png')
+            background-size 100%
+            vertical-align middle
+        .phone_login
+          background-color #b4282d
+          color #ffffff
+          .phone_icon
+            background-position (0 -50/$rem)
+        .email_login
+          color  #b4282d
+        .phone_regist
+          color #333333
+          width 100%
+          font-size (28/$rem)
+          text-align center
+          .arrow
+            display inline-block
+            width (28/$rem)
+            height (28/$rem)
+            background-image url('http://yanxuan-static.nosdn.127.net/hxm/yanxuan-wap/p/20161201/style/img/icon-normal/arrow-right3-c1ab37e88b.png')
+            background-size 100%
+            vertical-align middle
+      .login_selector
+        position absolute
+        left 0
+        bottom (80/$rem)
+        width 100%
+        height (40/$rem)
+        text-align center 
+        line-height (40/$rem)
+        display flex
+        justify-content center
+        .login_item
+          padding (0 40/$rem)
+          font-size (28/$rem)
+          color #7F7F7F
+          border-right 1px solid #979797
+          // width (100/$rem)
+          &:last-of-type
+            border-right 0
+          span
+            display inline-block
+            width (40/$rem)
+            height (40/$rem)
+            background-image url('./img/profile.png')
+            background-size 100%
+            background-position (0 -150/$rem)
+            vertical-align middle
+            margin-right (5/$rem)
+            .iconfont
+              font-size (38/$rem)   

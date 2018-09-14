@@ -1,0 +1,50 @@
+@import "../../../node_modules/stylus-px2rem"
+  html-font-size = 375/12px
+@import '../../assets/stylus/mixins.styl'
+    .categorys
+      position relative
+      .cate_search
+        bottom-border-1px(#e4e4e4)
+        height 88px
+        padding 15px 30px
+        background-color #ffffff
+        box-sizing border-box
+        position fixed
+        top 0
+        left 0
+        z-index 99
+        width 100%
+      .cate_container
+        margin 90px 0 100px 0
+        .menu_container
+          position fixed
+          left 0
+          top 88px
+          width 162px
+          height 1280px
+          overflow hidden
+          background-color #ffffff
+          .menu_wrapper
+            padding-top 40px
+            padding-bottom 138px
+            li
+              height 50px
+              font-size 28px
+              color #333333
+              text-align center
+              position relative
+              line-height 50px
+              margin-top 40px
+              &:first-of-type
+                margin-top 0
+              &.active
+                color #ab2b2b
+                font-size 28px
+                &::before
+                  content: ' ';
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  bottom: 0;
+                  width: 0.08px;
+                  background-color: #ab2b2b;

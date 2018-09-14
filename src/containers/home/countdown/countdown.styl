@@ -1,0 +1,75 @@
+@import "../../../../node_modules/stylus-px2rem"
+  html-font-size = 375/12px
+@import '../../../assets/stylus/mixins.styl'
+    .countDown
+      height 380px
+      margin-bottom 20px
+      padding 30px 40px 30px 56px
+      background-color #ffffff
+      display flex
+      .countDown_time
+        width 334px
+        height 320px
+        padding-top 80px
+        .countDown_title
+          height 36px
+          font-size 36px
+          color #333
+          letter-spacing 16px
+          margin-bottom 24px
+          letter-spacing 7px
+        .countDown_time_change
+          height 56px
+          display flex
+          .hours,.minutes,.second
+            display inline-block
+            width 62px
+            height 56px
+            background-color #444
+            color #fff
+            font-size 30px
+            border-radius 5px
+            text-align center
+            line-height  56px
+          .colon
+            font-size 30px
+            display inline-block
+            color #333
+            text-align center
+            font-weight bold
+            width 20px
+            line-height  56px
+            margin 0 4px
+        .next_countdown
+          height 24px
+          margin-top 40px
+          font-size 24px
+          color #333
+      .countDown_info
+        width 320px
+        height 320px
+        background-image url('http://yanxuan.nosdn.127.net/5a07b6a1c9d8d5e039e8360d0f92c396.png?imageView&quality=85&thumbnail=330x330')
+        background-size 100%
+        position relative
+        .countDown_price
+          width 96px
+          height 96px
+          border-radius 50%
+          background rgba(244,143,24,.95) 
+          display flex
+          flex-direction column
+          text-align center 
+          justify-content center
+          color #fff
+          font-size 27px
+          position absolute
+          right 20px
+          bottom 30px
+          .oldPrice
+            &::before
+              content ''
+              width 55%
+              height 1px
+              background-color #fff
+              position absolute
+              top 60px

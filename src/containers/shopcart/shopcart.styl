@@ -1,0 +1,71 @@
+@import "../../../node_modules/stylus-px2rem"
+  html-font-size = 375/12px
+@import '../../assets/stylus/mixins.styl'
+  .shopCart
+    .shopCart_header
+      width 100%
+      height 88px
+      background-color #ffffff
+      line-height 88px
+      display flex
+      >.title
+        font-size 36px
+        margin-left 300px
+        color #333333
+      >.coupon
+        font-size 30px
+        float right
+        margin-left 220px
+        color #B4282D
+    .service
+      .service_list
+        padding 0 30px
+        overflow hidden
+        height 70px
+        display flex
+        justify-content space-between
+        align-items center  
+        li
+          height 36px
+          display flex
+          flex 1
+          align-items center
+          &:last-of-type
+            justify-content flex-end
+          &:nth-of-type(2)
+            justify-content center
+          .circle
+            width 10px
+            height 10px
+            background-image url('http://yanxuan-static.nosdn.127.net/hxm/yanxuan-wap/p/20161201/style/img/icon-normal/servicePolicy-1d7541974f.png')
+            background-size 100%
+            vertical-align middle
+            justify-content center
+          .service_title
+            font-size 24px
+            color #666666
+            margin-left 10px
+    .shopCart_main
+      display flex
+      flex-direction column
+      margin-top 400px
+      display flex
+      justify-content center
+      align-items center
+      .shopCart_img
+        width 248px
+        height 248px
+        background-image url('http://yanxuan-static.nosdn.127.net/hxm/yanxuan-wap/p/20161201/style/img/icon-normal/noCart-a8fe3f12e5.png')
+        background-size 100%
+      .shopCart_add
+        font-size 28px
+        color #999999
+        margin-bottom 50px
+      .shopCart_login
+        font-size 30px
+        width 480px
+        height 92px
+        background-color #b4282d
+        text-align center
+        line-height 92px
+        color #ffffff

@@ -1,0 +1,278 @@
+ @import "../../../../node_modules/stylus-px2rem"
+  html-font-size = 375/12px
+@import '../../../assets/stylus/mixins.styl'
+body,html 
+  background-color #f4f4f4
+  height 100%
+  width 100%
+  overflow hidden
+  .home
+    position relative
+    .header_header_con  //home页头部容器
+      width 100%
+      background-color #ffffff
+      margin-bottom 8px
+      position fixed
+      top 0
+      left 0
+      z-index 99
+      .home_header
+        padding 16px 30px
+        font-size 0
+        width 100%
+        box-sizing border-box
+        display flex
+        img 
+          width 140px
+          height 40px
+          vertical-align middle
+          padding-top 8px
+          margin-right 20px
+      .home_nav        //home也顶部横向可滚动导航
+        width 100%
+        overflow hidden
+        background-color #ffffff
+        .home_nav_list
+          padding 0 30px
+          height 50px
+          width 1500px
+          li
+            float left
+            height 60px
+            margin-left 40px
+            font-size 28px
+            padding 0 17px
+            line-height 60px
+            color #333
+            &.active
+              border-bottom 4px solid #b4282d
+              color #b4282d
+          li:first-of-type
+            margin-left 0
+    .home_main    //home页主体部分
+      margin-top 160px
+      margin-bottom 100px
+      overflow hidden
+      height 1200px
+      .show_container   //home主页主轮播图
+        background-color #ffffff
+        margin-bottom 15px
+        .swiper-container
+          width 100%
+          height 370px
+          .swiper-wrapper
+            width 100%
+            height 100%
+            .swiper-slide
+              display flex
+              justify-content center
+              align-items flex-start
+              flex-wrap wrap
+              img 
+                width 100%
+          .swiper-pagination
+            .swiper-pagination-bullet
+              display inline-block
+              width 40px
+              height 4px
+              border-radius 0
+              background #fff
+              opacity 0.4
+            .swiper-pagination-bullet-active
+              background #fff
+              opacity 1
+        .show_tips
+          width 100%
+          height 72px
+          padding 0 40px
+          box-sizing border-box
+          display flex
+          >li
+            float left 
+            flex 1
+            height 36px
+            margin 18px 0
+            display flex
+            line-height 36px
+            .tip_icon
+              width 32px
+              background-size 100%
+              background-repeat no-repeat
+              vertical-align middle
+              margin-top 5px
+            .tip_text
+              font-size 24px
+              height 32px
+              width 100%
+              margin-left 10px
+      .welfare    //福利社部分
+        width 100%
+        height 300px
+        margin-bottom 20px
+        background-image url('http://yanxuan.nosdn.127.net/a3ea2d1108c94c7dece05eddf95f6df5.jpg')
+        background-size 100%
+      .home_footer
+        width 100%
+        height 245px
+        background-color #414141
+        .footer_container
+          padding 54px 20px 28px
+          .footer_button
+            height 62px
+            display flex
+            align-items center
+            text-align center
+            span
+              width 172px
+              height 60px
+              font-size 26px
+              color #ffffff
+              border 1px solid #999
+              display inline-block
+              line-height 60px
+              vertical-align middle
+              border-radius 4px
+              &:first-of-type
+                margin 0 50px 0 150px
+          .company_info
+            height 64px
+            margin-top 36px
+            font-size 24px
+            color #999
+            text-align center
+            line-height 32px
+    .gotoTop
+      position fixed
+      width 82px
+      height 82px
+      right 23px
+      bottom 120px
+      z-index 5000
+      background-image url('http://yanxuan-static.nosdn.127.net/hxm/yanxuan-wap/p/20161201/style/img/icon-normal/goToTop-7a19216f77.png')
+      background-size 100% 
+    .newWapUserGiftModal
+      position fixed
+      top 0
+      bottom 0
+      left 0
+      right 0
+      z-index 999
+      .mask
+        position absolute
+        top 0
+        left 0
+        width 100%
+        height 100%
+        background rgba(0,0,0,.5)
+        .close_btn
+          width 64px
+          height 64px
+          position fixed
+          top 60px
+          right 30px
+          background-image url('../../../assets/img/close.png')
+          background-size 100%
+          opacity .6
+        .new_enjoy
+          position absolute
+          top 50%
+          left 50%
+          transform translate(-50%,-50%)
+          width 630px
+          height 692px
+          .enjoy_content
+            width 100%
+            height 100%
+            box-sizing border-box
+            padding 30px 24px
+            border-radius 20px
+            background #ffffff
+            .title
+              width 100%
+              height 59px
+              text-align center
+              line-height 59px
+              font-size 40px
+              font-weight bold
+              color #333 
+              span 
+                font-weight bold
+            .subTitle
+              width 100%
+              height 36px
+              margin-top 4px
+              font-size 24px
+              text-align center
+              line-height 36px
+            .newUserItem
+              width 100%
+              height 232px
+              margin-top 50px
+              background #f4f4f4
+              border-radius 5px
+              display flex
+              .item_img
+                width 232px
+                height 232px
+                img 
+                  width 100%
+                  height 100%
+              .content
+                width 342px
+                height 146px
+                padding 43px 0
+                margin-left 8px 
+                .item_title
+                  width 280px
+                  height 41px
+                  font-size 26px
+                  overflow hidden
+                  white-space nowrap
+                  text-overflow ellipsis
+                  line-height 41px
+                .item_brand
+                  width 100%
+                  height 36px
+                  margin-top 15px
+                  display flex
+                  span 
+                    height 34px
+                    padding 0 8px
+                    border 1px solid #7f7f7f
+                    border-radius 5px
+                    font-size 24px
+                    width auto
+                    line-height 34px
+                .item_price
+                  width 100%
+                  height 41px
+                  margin-top 20px
+                  font-size 26px
+                  display flex
+                  .newPrice
+                    color #b4282d
+                  .oldPrice
+                    color #999
+                    position relative
+                    text-decoration line-through
+                    margin-left 8px
+            .actCouponBtn
+              width 100%
+              height 88px
+              margin-top 40px
+              background #b4282d
+              color #ffffff
+              text-align center
+              line-height 88px
+              font-size 26px
+              border-radius 5px
+            .linkBtn
+              width 580px
+              height 86px
+              border 1px solid #7F7F7F
+              margin-top 24px
+              color #333
+              text-align center
+              line-height 86px
+              border-radius 5px
+              font-size 26px

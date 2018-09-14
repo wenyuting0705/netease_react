@@ -1,0 +1,53 @@
+@import "../../../node_modules/stylus-px2rem"
+  html-font-size = 375/12px
+@import '../../assets/stylus/mixins.styl'
+  .header
+    bottom-border-1px(#e4e4e4)
+    width 100%
+    height 87px
+    background-color #fafafa
+    position fixed
+    top 0
+    left 0
+    z-index 99
+    display flex
+    align-items center
+    justify-content space-between
+    .header_con
+      padding 0 16px 0 24px
+      position relative
+      display flex
+      align-items center
+      // justify-content space-between
+      width 710px
+      height 100%
+      span
+        background-image url('./img/header.png')
+      .header_home
+        width 48px
+        height 44px
+        background-position 0 -206px
+        background-size 325%
+      .header_logo
+        width 172px
+        height 54px
+        position absolute
+        top 0
+        left 0
+        right 0
+        bottom 0
+        margin auto
+        background-position 0 -252px
+        background-size 100%
+      .header_search
+        width 48px
+        height 44px
+        margin-left 510px
+        background-size 330%
+        background-position -4px -324px
+      .header_cart
+        width 48px
+        height 44px
+        margin-left 40px
+        background-size 330%
+        background-position -6px -4px

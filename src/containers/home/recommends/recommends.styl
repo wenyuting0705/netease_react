@@ -1,0 +1,104 @@
+@import "../../../../node_modules/stylus-px2rem"
+  html-font-size = 375/12px
+@import '../../../assets/stylus/mixins.styl'
+   .recommend
+      width 100%
+      background-color #ffffff
+      margin-bottom 15px
+      .recommend_header
+        width 100%
+        height 260px
+        display flex
+        flex-direction column
+        background-image url('http://yanxuan-static.nosdn.127.net/hxm/yanxuan-wap/p/20161201/style/img/icon-normal/bitmap2-d626e0b52a.png')
+        background-size 100%
+        color #B4A078
+        align-items center
+        justify-content center
+        margin-bottom 32px
+        >div:first-of-type
+          font-size 40px
+        .lookAll
+          width 240px
+          height 56px
+          font-size 30px
+          margin-top 20px
+          text-align center
+          background-color #F4E9CB
+          line-height 56px
+          span 
+            display inline-block
+            width 10px
+            height 22px
+            background-image url('http://yanxuan-static.nosdn.127.net/hxm/yanxuan-wap/p/20161201/style/img/icon-normal/indexPopularArrow-fb701819de.png')
+            background-size 100%
+      .recommend_container
+        width 100%
+        height 480px
+        overflow hidden
+        >ul
+          overflow hidden
+          >li
+            float left
+            width 280px
+            margin-left 30px
+            display flex
+            flex-direction column
+            .recommend_img
+              width 280px
+              height 280px
+              background-color #f4f4f4
+              >img 
+                width 280px
+                height 280px
+            div
+              width 280px
+              padding 0 10px
+              box-sizing border-box
+              span 
+                display inline-block
+                width 280px
+                overflow hidden
+                white-space nowrap
+                text-overflow ellipsis
+            .recommend_name
+              height 33px
+              margin 10px 0
+              font-size 28px
+              color #333333
+            .recommend_info
+              height 30px
+              font-size 26px
+              color #7f7f7f
+              margin-bottom 20px
+            .recommend_price
+              height 27px
+              font-size 28px
+              color #b4282d
+            .recommend_tags
+              height 40px
+              margin-top 10px
+              font-size 24px
+              color #fff
+              box-sizing border-box
+              line-height 30px
+              display flex
+              >p
+                width 110px
+                height 40px
+                padding 5px 16px
+                background-color #f48f18
+                vertical-align middle
+                box-sizing border-box
+                border-radius 3px
+                transform scale(.8)
+                text-align center
+          .more_recommends
+            width 280px
+            height 280px
+            border 8px solid #F4F4F4
+            line-height 280px
+            text-align center 
+            font-size 30px
+            color #666
+            box-sizing border-box

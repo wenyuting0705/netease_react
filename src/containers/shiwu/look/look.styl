@@ -1,0 +1,45 @@
+@import "../../../../node_modules/stylus-px2rem"
+  html-font-size = 375/12px
+@import '../../../assets/stylus/mixins.styl'
+.look
+  width 100%
+  background #ffffff
+  header 
+    width 100%
+    height 120px
+    text-align center 
+    line-height 120px
+    font-size 32px
+  .look_content
+    width 100%
+    .img_wrapper
+      width 100%
+      height 750px
+      >img 
+        width 750px
+        height 750px
+    .topicInfo
+      width 690px
+      height 204px
+      padding 24px 30px 46px
+      .author
+        width 100%
+        height 48px
+        margin-bottom 24px
+        display flex
+        color #333
+        font-size 24px
+        line-height 48px
+        img 
+          width 46px
+          height 46px
+          border 1px solid #d9d9d9
+          border-radius 50%
+          margin-right 8px
+          vertical-align middle
+          .nickname
+            height 48px
+      .look_desc
+        color #7f7f7f
+        font-size 28px
+        line-height 1.6
